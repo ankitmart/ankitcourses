@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankit Academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Ankit Academy</h1>
+  </header>
+
+  <main>
+    <section id="courses" class="grid">
+      <!-- Course cards injected by JS -->
+    </section>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+
+        <div class="payment-options">
+          <p>Select a payment method:</p>
+          <button class="payment-btn" onclick="confirmPayment('PhonePe')">PhonePe</button>
+          <button class="payment-btn" onclick="confirmPayment('Paytm')">Paytm</button>
+          <button class="payment-btn" onclick="confirmPayment('Credit Card')">Credit Card</button>
+          <button class="payment-btn" onclick="confirmPayment('Debit Card')">Debit Card</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

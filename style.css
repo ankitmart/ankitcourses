@@ -1,0 +1,132 @@
+/* style.css */
+:root {
+  --bg-color: #1E1E2F;
+  --text-color: #EAEAEA;
+  --header-bg: #2B2D42;
+  --accent-color: #FFD700;
+  --card-bg: #3A3D5B;
+  --hover-bg: #FFD700;
+  --hover-text: #1E1E2F;
+  --hover-shadow: rgba(255, 215, 0, 0.2);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--header-bg);
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px var(--hover-shadow);
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: var(--hover-bg);
+  color: var(--hover-text);
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: var(--accent-color);
+  color: var(--hover-text);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #E6C200;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.payment-options {
+  margin-top: 1.5rem;
+}
+
+.payment-btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  background-color: var(--accent-color);
+  color: var(--hover-text);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.payment-btn:hover {
+  background-color: #E6C200;
+}
