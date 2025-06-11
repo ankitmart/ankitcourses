@@ -102,7 +102,7 @@ function confirmPayment(method) {
     qr.className = 'dynamic-payment';
     qr.innerHTML = `
       <p>Scan the QR code using Paytm to complete your payment:</p>
-      <img src="https://via.placeholder.com/200x200.png?text=Paytm+QR" alt="Paytm QR Code" style="margin-top:1rem;border-radius:8px;">
+      <img src="/mnt/data/WhatsApp%20Image%202025-06-11%20at%206.51.10%20PM.jpeg" alt="PhonePe QR Code"
     `;
     document.querySelector('.modal-content').appendChild(qr);
 
